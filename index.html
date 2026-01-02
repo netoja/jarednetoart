@@ -8,38 +8,78 @@
 </head>
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-  </header>
+<header>
+  <h1>Your Name</h1>
 
-  <main class="portfolio">
+  <nav>
+    <a href="#about">About</a>
+    <span>—</span>
+    <a href="#selected">Selected</a>
+    <span>—</span>
+    <a href="#archive">Archive</a>
+  </nav>
+</header>
 
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>Your Name</h2>
+  <p class="bio">
+    I am an artist working in [medium]. My practice explores [themes, materials, or approach].
+  </p>
+  <p class="contact">
+    Contact: <a href="mailto:youremail@example.com">youremail@example.com</a>
+  </p>
+</section>
+
+<!-- SELECTED WORKS -->
+<section id="selected" class="selected">
+  <h2>Selected Works</h2>
+
+  <div class="portfolio">
     <section class="work">
-      <img src="images/work1.jpg" alt="Artwork title 1">
-      <p class="title">Artwork Title 1</p>
+      <img src="images/selected1.jpg" alt="Artwork title">
+      <p class="title">Artwork Title</p>
+      <p class="subtitle">Oil on canvas, 2026</p>
     </section>
 
     <section class="work">
-      <img src="images/work2.jpg" alt="Artwork title 2">
-      <p class="title">Artwork Title 2</p>
+      <img src="images/selected2.jpg" alt="Artwork title">
+      <p class="title">Artwork Title</p>
+      <p class="subtitle">Mixed media, 2025</p>
     </section>
+  </div>
+</section>
 
-    <section class="work">
-      <img src="images/work3.jpg" alt="Artwork title 3">
-      <p class="title">Artwork Title 3</p>
-    </section>
+<!-- ARCHIVE -->
+<section id="archive" class="archive">
+  <h2>Archive</h2>
 
-    <section class="work">
-      <img src="images/work4.jpg" alt="Artwork title 4">
-      <p class="title">Artwork Title 4</p>
-    </section>
+  <!-- YEAR 2026 -->
+  <details open>
+    <summary>2026</summary>
+    <div class="portfolio">
+      <section class="work">
+        <img src="images/2026-work1.jpg" alt="Artwork title">
+        <p class="title">Artwork Title</p>
+        <p class="subtitle">Oil on canvas, 2026</p>
+      </section>
+    </div>
+  </details>
 
-    <section class="work">
-      <img src="images/work5.jpg" alt="Artwork title 5">
-      <p class="title">Artwork Title 5</p>
-    </section>
+  <!-- YEAR 2025 -->
+  <details>
+    <summary>2025</summary>
+    <div class="portfolio">
+      <section class="work">
+        <img src="images/2025-work1.jpg" alt="Artwork title">
+        <p class="title">Artwork Title</p>
+        <p class="subtitle">Acrylic on panel, 2025</p>
+      </section>
+    </div>
+  </details>
 
-  </main>
+  <!-- Repeat down to 2016 -->
+</section>
 
 </body>
 </html>
