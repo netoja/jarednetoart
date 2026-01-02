@@ -79,8 +79,11 @@ nav span {
 }
 
 .work img {
-  width: 100%;
   display: block;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .title {
@@ -122,3 +125,4 @@ details summary::after {
 details[open] summary::after {
   content: " –";
 }
+
