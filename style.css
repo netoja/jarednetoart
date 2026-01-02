@@ -78,13 +78,15 @@ nav span {
   margin-bottom: 100px;
 }
 
+
 .work img {
   display: block;
-  max-width: 800px;
-  width: 100%;
+  width: auto;
+  max-width: min(100%, 800px);  /* responsive cap */
   height: auto;
   margin: 0 auto;
 }
+
 
 .title {
   margin-top: 12px;
@@ -125,4 +127,5 @@ details summary::after {
 details[open] summary::after {
   content: " –";
 }
+
 
