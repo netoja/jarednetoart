@@ -13,7 +13,7 @@ body {
 
 /* Header */
 header {
-  padding: 60px 20px 80px;
+  padding: 60px 20px 50px;
   text-align: center;
 }
 
@@ -21,31 +21,104 @@ header h1 {
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 0.05em;
+  margin-bottom: 14px;
 }
 
-/* Portfolio layout */
+nav {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+}
+
+nav span {
+  margin: 0 8px;
+  color: #aaa;
+}
+
+/* About */
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 20px 140px;
+  text-align: center;
+}
+
+.bio {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Section headers */
+.selected,
+.archive {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 140px;
+}
+
+.selected h2,
+.archive h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 80px;
+}
+
+/* Portfolio */
 .portfolio {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px 100px;
 }
 
-/* Individual work */
 .work {
   margin-bottom: 100px;
 }
 
 .work img {
   width: 100%;
-  height: auto;
   display: block;
 }
 
-/* Title under image */
 .title {
   margin-top: 12px;
   font-size: 0.95rem;
-  color: #444;
   text-align: center;
-  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Accordion (Years) */
+details {
+  margin-bottom: 80px;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 40px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::after {
+  content: " +";
+  color: #aaa;
+}
+
+details[open] summary::after {
+  content: " –";
 }
